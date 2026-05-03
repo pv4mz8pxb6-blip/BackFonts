@@ -7,14 +7,14 @@
 ```
 fonts/
 ├── BackFonts.css        → 合并后的 CSS
-├── ttf/                 → 原始字体文件
-├── ysbzt/               → 峄山碑篆体
-│   └── *.woff2
+├── woff/
+│   ├── yrdzst-regular/               → YRDZST-Regular
+│   └── ...
 └── ...
 ```
 
 - 文件夹名称对应字体名称（拼音首字母缩写）
-- 每个 `.woff2` 文件对应一个 Unicode 子集
+- 每个 `.woff2` 文件对应一个 Unicode 子集，由 [cn-font-split](https://www.npmjs.com/package/cn-font-split) 生成
 
 ## 使用方式
 
@@ -22,22 +22,23 @@ fonts/
 
 ```html
 <!-- 国内推荐 -->
-<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/pv4mz8pxb6-blip/BackFonts@v1.0.4/fonts/BackFonts.css">
+<link rel="stylesheet" href="https://cdn.jsdmirror.com/gh/pv4mz8pxb6-blip/BackFonts@v1.0.5/fonts/BackFonts.css">
 
 <!-- 官方源（海外） -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pv4mz8pxb6-blip/BackFonts@v1.0.4/fonts/BackFonts.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pv4mz8pxb6-blip/BackFonts@v1.0.5/fonts/BackFonts.css">
 ```
 
 引入后在 CSS 中直接使用字体：
 
 ```css
-/* 峄山碑篆体 */
-font-family: '峄山碑篆体', sans-serif;
+/* YRDZST-Regular */
+font-family: 'YRDZST-Regular', sans-serif;
 
 ```
 
 ## 版本
 
 | 版本 | 说明 |
-|------|------|
+|------| v1.0.5 | 新增字体: YRDZST-Regular |
+|------|
 | v1.0.4 | 新增字体: 峄山碑篆体 |
