@@ -5,14 +5,15 @@
 ## 目录结构
 
 ```
-ysbzt/
+ysbzt/          → 峄山碑篆体
 ├── 00eeed094908e64186017717990a44bc.woff2
 ├── 08caf0773167ae075ea715d9efeabf4a.woff2
 ├── ...
 └── ff9000be33e77c9cf4e1974840490264.woff2
 ```
 
-- `ysbzt/`：字体分包输出目录，每个 `.woff2` 文件对应一个 Unicode 子集
+- 文件夹名称对应字体名称：`ysbzt` = 峄山碑篆体（拼音首字母缩写）
+- 每个 `.woff2` 文件对应一个 Unicode 子集，由 [cn-font-split](https://www.npmjs.com/package/cn-font-split) 生成
 
 ## 使用方式
 
