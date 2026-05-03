@@ -4,3 +4,4 @@ package.json
 package-lock.json
 fonts/ttf/
 .comate/
+fonts/font-mappings.json
